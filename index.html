@@ -1,0 +1,165 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsividad</title>
+<style>
+* {
+box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#59ffb2 ;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #d1f5b3;
+    color: #e1e1ff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: center;
+}
+.menu li:hover {
+    background-color: #f1ff32;
+}
+.aside {
+    background-color: #d1f5b3;
+    padding: 15px;
+    color: #7575ff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 450px;
+    background-image:url("img/caritafeliz.jpg");
+}
+.footer {
+    background-color: #81ff47;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .aside{
+     background-image: url("img/caritatriste.jpg");
+    }
+  [class*="col-"] {
+        width: 100%;
+    }
+}
+
+  
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Practica 9 : Responsividad</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://estevez07.github.io/Practica1/">Practica 1</a></li>
+    <li><a href="https://estevez07.github.io/Practica2/">Practica 2</a></li>
+    <li><a href="https://estevez07.github.io/Practica3/">Practica 3</a></li>
+    <li><a href="https://estevez07.github.io/Practica4/">Practica 4</a></li>
+    <li><a href="https://estevez07.github.io/Practica5/">Practica 5</a></li>
+    <li><a href="https://estevez07.github.io/Practica6/">Practica 6</a></li>
+    <li><a href="https://estevez07.github.io/Practica7/">Practica 7</a></li>
+    <li><a href="https://estevez07.github.io/Practica8/">Practica 8</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+    <header>
+        <hgroup>
+            <h1>Mi CV</h1>
+            <h4>Estevez Osorio Luis Antonio</h4>
+        </hgroup>
+  </header>
+  
+  <center><video src="media/Video.mp4" controls height="200px" width="200px"></video></center>
+  <br>
+  <h2>Direcci&oacute;n</h2><br> <br>
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4089.080099839714!2d-97.12186540758661!3d18.83588109746886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c502e8f71cf6d1%3A0xae87a4471fe5f769!2zTMOhemFybyBDw6FyZGVuYXMsIFLDrW8gQmxhbmNvLCBWZXIu!5e0!3m2!1ses-419!2smx!4v1676918834824!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br>
+ 
+  <fieldset>
+  <legend>Datos</legend>
+ <h2>Datos Personales</h2>  
+  <il >
+      <li>Nombre completo: Estevez Osorio Luis Antonio</li>
+      <li>Fecha de nacimiento: 07/09/2002</li>
+      <li>Lugar de nacimiento: Orizaba,ver</li>
+  </il>
+  <br>
+  <h2>Formaci&oacute;n acad&eacute;mica</h2> 
+  <il>
+      <li>2020-2024: Instituto tecnologico de Orizaba</li>
+      <li>2017-2020: CONALEP  </li>
+      <li>2014-2017: Vicente Guerrero</li>
+  </il>
+  <br>
+  <h2>Experiencia laboral</h2> 
+  <il>
+      <li>2019-2020: Desarrollo de aplicaciones java </li>
+      <li>2020-2021: Desarrollo Base de datos </li>
+      <li>2022-2023: Desarrollo de aplicaciones web</li>
+  </il>
+  
+</fieldset>
+
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+   
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
